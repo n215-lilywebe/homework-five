@@ -1,0 +1,64 @@
+.about{
+    margin-top:110px;
+    margin-bottom:180px;
+
+    .about-header{
+        h1{
+            margin-bottom:2px;
+
+        }
+        hr{
+            width:177px;
+            height:2px;
+            border-width:0px;
+            background-color: black;
+            margin-bottom:10px;
+        }
+    }
+
+    .about-client-quotes{
+        margin-top:107px;
+
+        .client-quotes-title{
+
+
+
+        }
+        .client-box{
+            max-width:722px;
+            display:flex;
+            position:relative;
+            margin-bottom:37px;
+
+            .client-box-img{
+                
+                width:260px;
+                height:150px;
+                overflow: hidden;
+                margin-right:21px;
+
+                img{
+                    width:100%;
+                }
+
+            }
+
+            .client-box-quote{
+                width:440px;
+                margin-bottom: 20px;
+                
+
+            }
+
+            .client-name{
+                position:absolute;
+                bottom:0;
+                right:0;
+
+            }
+
+        }
+    }
+
+    
+}
