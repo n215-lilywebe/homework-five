@@ -1,3 +1,11 @@
+@font-face {
+  font-family: ProximaNovaECT;
+  src: url(../Proxima_Nova_Extra_Condensed_Thin.otf);
+}
+@font-face {
+  font-family: GillSansUB;
+  src: url(../GILSANUB.TTF);
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,36 +32,448 @@ p {
   margin: 0 auto;
 }
 
+navh {
+  max-width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+}
+navh span {
+  color: white;
+  margin: 0 20px;
+}
+navh .logo {
+  max-width: 10%;
+  height: 53%;
+}
+navh .links {
+  max-width: 80%;
+}
+navh .links a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: GillSansUB;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 890px) {
+  nav .links {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 889px) {
+  nav .links {
+    font-size: 10px;
+    margin-left: 17%;
+  }
+}
 nav {
   max-width: 980px;
+  height: 80px;
   margin: 0 auto;
-  background-color: #79ADDC;
-  height: 100px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+}
+nav span {
+  color: black;
+  margin: 0 20px;
+}
+nav .logo {
+  max-width: 10%;
+  height: 53%;
+  color: black;
+}
+nav .links {
+  max-width: 80%;
+}
+nav .links a {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: GillSansUB;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 890px) {
+  nav .links {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 889px) {
+  nav .links {
+    font-size: 10px;
+    margin-left: 17%;
+  }
+}
+.banner {
+  max-width: 100%;
+  height: 58%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main-header-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -80px auto 0 auto;
+}
+.banner .herotext {
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+}
+.banner .herotext h1 {
+  font-size: 60px;
+  font-family: ProximaNovaECT;
+}
+.banner .herotext h3 {
+  font-size: 20px;
+  width: 47%;
+  margin: 0 auto;
+  font-family: GillSansUB;
+}
+.banner .herotext a {
+  margin: 0 auto;
+  background-color: #79addc;
+  height: 10%;
+  width: 10%;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner .herotext {
+    padding-top: 15%;
+  }
+}
+.form-content {
+  max-width: 818px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.form-content input {
+  font-family: GillSansUB;
+  font-size: 18px;
+  color: black;
+}
+.form-content input::placeholder {
+  color: black;
+}
+.form-content .submit {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  height: 60px;
+  font-size: 15px;
+  margin: 37px auto 0 auto;
+  background-color: #79addc;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  border-color: #79addc;
+  border-style: solid;
+  font-family: GillSansUB;
+}
+.form-content .message {
+  width: 818px;
+  height: 192px;
+  display: block;
+  margin-top: 20px;
+  padding-left: 10px;
+  border-color: #79addc;
+  border-style: solid;
+  border-width: 3px;
+  font-family: GillSansUB;
+}
+.form-content .message::placeholder {
+  color: black;
+}
+.form-content .attendees {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-family: GillSansUB;
+}
+.form-content .attendees .adults {
+  display: flex;
+}
+.form-content .attendees .adults h2 {
+  font-size: 18px;
+  color: black;
+  padding-top: 20px;
+}
+.form-content .attendees .adults select {
+  margin-left: 56px;
+  border-color: #79addc;
+  border-style: solid;
+  border-width: 3px;
+  width: 103px;
+  height: 58px;
+  color: black;
+  font-family: GillSansUB;
+}
+.form-content .attendees .children {
+  display: flex;
+}
+.form-content .attendees .children h2 {
+  font-size: 18px;
+  color: black;
+  padding-top: 20px;
+}
+.form-content .attendees .children select {
+  margin-left: 56px;
+  border-color: #79addc;
+  border-style: solid;
+  border-width: 3px;
+  width: 103px;
+  height: 58px;
+  font-family: GillSansUB;
+}
+.form-content .attendees .rooms {
+  display: flex;
+}
+.form-content .attendees .rooms h2 {
+  font-family: GillSansUB;
+  font-size: 18px;
+  color: black;
+  padding-top: 20px;
+}
+.form-content .attendees .rooms select {
+  margin-left: 56px;
+  border-color: #79addc;
+  border-style: solid;
+  border-width: 3px;
+  width: 103px;
+  height: 58px;
+  font-family: GillSansUB;
+}
+.form-content .formtitle {
+  font-size: 60px;
+  padding-top: 50px;
+  color: black;
+  font-family: ProximaNovaECT;
+}
+.form-content .top-boxes {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-nav .logo {
-  width: 100px;
-  height: 50px;
-  background-color: pink;
+.form-content .top-boxes h2 {
+  font-family: GillSansUB;
+  font-size: 18px;
+  color: black;
+  padding-top: 20px;
+  width: 120px;
 }
-nav .links a {
-  text-decoration: none;
-  margin-left: 20px;
+.form-content .top-boxes .check {
+  width: 85%;
+}
+.form-content .top-boxes .long-boxes {
+  width: 453px;
+}
+.form-content .top-boxes .icon {
+  margin-left: -30px;
+}
+.form-content .top-boxes input {
+  width: 344px;
+  height: 58px;
+  padding-left: 10px;
+  border-color: #79addc;
+  border-style: solid;
+  border-width: 3px;
 }
 
-footer {
-  height: 100px;
-  background-color: #79ADDC;
+@media screen and (max-width: 900px) {
+  .form-content .message {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .form-content .top-boxes {
+    flex-direction: column;
+    align-items: space-between;
+  }
+  .form-content .top-boxes .icon {
+    display: none;
+  }
+  .form-content .top-boxes .long-boxes {
+    max-width: 344px;
+  }
+  .form-content .top-boxes input {
+    margin-bottom: 5%;
+    max-width: 344px;
+  }
 }
-footer .footer-content {
+@media screen and (max-width: 900px) {
+  .form-content .formtitle {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+.promotours {
+  display: flex;
+  width: 53%;
+  height: 35%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: -37px;
+  font-family: ProximaNovaECT;
+}
+.promotours .container-one {
+  width: 232px;
+  height: 305px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/asset-5@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promotours .container-one .textcontainer {
+  text-align: center;
+  height: 187px;
+  color: white;
+  padding-top: 37px;
+}
+.promotours .container-one .textcontainer h2 {
+  font-size: 60px;
+}
+.promotours .container-one .textcontainer p {
+  font-size: 30px;
+}
+.promotours .container-one .textcontainer a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  width: 133px;
+  height: 40px;
+  padding-top: 10px;
+  background-color: #79addc;
+  color: white;
+  text-decoration: none;
+  margin-top: 57px;
+  border-style: solid;
+  border-color: #79addc;
+  border-radius: 15px;
+}
+.promotours .container-two {
+  width: 232px;
+  height: 305px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/asset-11@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promotours .container-two .textcontainer {
+  text-align: center;
+  height: 187px;
+  color: white;
+  padding-top: 37px;
+}
+.promotours .container-two .textcontainer h2 {
+  font-size: 60px;
+}
+.promotours .container-two .textcontainer p {
+  font-size: 30px;
+}
+.promotours .container-two .textcontainer a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  width: 133px;
+  height: 40px;
+  padding-top: 10px;
+  background-color: #79addc;
+  color: white;
+  text-decoration: none;
+  margin-top: 57px;
+  border-style: solid;
+  border-color: #79addc;
+  border-radius: 15px;
+}
+.promotours .container-three {
+  width: 232px;
+  height: 305px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/asset-14@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promotours .container-three .textcontainer {
+  text-align: center;
+  height: 187px;
+  color: white;
+  padding-top: 37px;
+}
+.promotours .container-three .textcontainer h2 {
+  font-size: 60px;
+}
+.promotours .container-three .textcontainer p {
+  font-size: 30px;
+}
+.promotours .container-three .textcontainer a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  width: 133px;
+  height: 40px;
+  padding-top: 10px;
+  background-color: #79addc;
+  color: white;
+  text-decoration: none;
+  margin-top: 57px;
+  border-style: solid;
+  border-color: #79addc;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .promotours {
+    flex-direction: column;
+    min-height: 1000px;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.footer {
+  height: 100px;
+  background-color: #79addc;
+  color: white;
+}
+.footer .container {
   max-width: 980px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.footer .container .logo {
+  width: 92px;
+  height: 42px;
+  margin-top: -20px;
+}
+.footer .container .copyright {
+  font-size: 12px;
+  font-family: GillSansUB;
+}
+.footer .container .socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 110px;
+  font-size: 22px;
 }
 
 .about {
@@ -62,16 +482,37 @@ footer .footer-content {
 }
 .about .about-header h1 {
   margin-bottom: 2px;
+  font-family: ProximaNovaECT;
+  font-size: 60px;
+  letter-spacing: 6px;
+  font-weight: 200px;
 }
 .about .about-header hr {
+  width: 171px;
+  height: 2px;
+  border-width: 0px;
+  background-color: black;
+  margin-bottom: 36px;
+}
+.about .about-header p {
+  font-family: GillSansUB;
+  font-size: 16px;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .about-client-quotes .client-quotes-title {
+  margin-bottom: 2px;
+  font-family: ProximaNovaECT;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.about .about-client-quotes hr {
   width: 177px;
   height: 2px;
   border-width: 0px;
   background-color: black;
-  margin-bottom: 10px;
-}
-.about .about-client-quotes {
-  margin-top: 107px;
+  margin-bottom: 36px;
 }
 .about .about-client-quotes .client-box {
   max-width: 722px;
@@ -91,11 +532,17 @@ footer .footer-content {
 .about .about-client-quotes .client-box .client-box-quote {
   width: 440px;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-family: GillSansUB;
 }
 .about .about-client-quotes .client-box .client-name {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-family: ProximaNovaECT;
+  font-size: 20px;
+  color: #79addc;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */

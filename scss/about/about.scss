@@ -5,14 +5,22 @@
     .about-header{
         h1{
             margin-bottom:2px;
+            font-family: ProximaNovaECT;
+            font-size: 60px;
+            letter-spacing: 6px;
+            font-weight:200px;
 
         }
         hr{
-            width:177px;
+            width:171px;
             height:2px;
             border-width:0px;
             background-color: black;
-            margin-bottom:10px;
+            margin-bottom:36px;
+        }
+        p{
+            font-family: GillSansUB;
+            font-size: 16px;
         }
     }
 
@@ -21,9 +29,20 @@
 
         .client-quotes-title{
 
-
-
+            
+                margin-bottom:2px;
+                font-family: ProximaNovaECT;
+                font-size: 40px;
+                letter-spacing: 4px;
         }
+        hr{
+            width:177px;
+            height:2px;
+            border-width:0px;
+            background-color: black;
+            margin-bottom:36px;
+        }
+
         .client-box{
             max-width:722px;
             display:flex;
@@ -46,6 +65,8 @@
             .client-box-quote{
                 width:440px;
                 margin-bottom: 20px;
+                font-size: 16px;
+                font-family: GillSansUB;
                 
 
             }
@@ -54,6 +75,10 @@
                 position:absolute;
                 bottom:0;
                 right:0;
+                font-family: ProximaNovaECT;
+                font-size:20px;
+                color:$site-blue;
+                letter-spacing: 2px;
 
             }
 

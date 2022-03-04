@@ -1,15 +1,33 @@
-footer{
-height:$nav-footer-height;
-background-color: $site-background;
+.footer{
+    height:$nav-footer-height;
+    background-color: #79addc;
+    color:white;
+    .container{
+        max-width: $content-width;
+        height:100%;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    
 
-.footer-content{
-    max-width: $content-width;
-    height:100%;
-    margin: 0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    .logo{
+        width:92px;
+        height:42px;
+        margin-top:-20px;
+    }
+    .copyright{
+        font-size: 12px;
+        font-family: GillSansUB;
+    }
+    .socials{
+        display:flex;
+        justify-content: space-evenly;
+        width:110px;
+        font-size: 22px;
+    }
+    }
 
 
 }
