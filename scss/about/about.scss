@@ -12,7 +12,7 @@
 
         }
         hr{
-            width:171px;
+            width:110px;
             height:2px;
             border-width:0px;
             background-color: black;
@@ -34,9 +34,10 @@
                 font-family: ProximaNovaECT;
                 font-size: 40px;
                 letter-spacing: 4px;
+                max-width:300px;
         }
         hr{
-            width:177px;
+            width:150px;
             height:2px;
             border-width:0px;
             background-color: black;
@@ -86,4 +87,33 @@
     }
 
     
+}
+@media screen and (max-width:1000px) {
+    .about{
+        .about-header{
+            max-width:90%;
+            margin: 0 auto;
+        }
+
+
+        .about-client-quotes{
+            .client-quotes-title{
+                margin-left:40px;
+            }
+            hr{
+                margin-left:40px;
+            }
+            .client-box{
+                margin:0 auto;
+                max-width:90%;
+                margin-bottom: 30px;
+
+                .client-box-quote{
+                   max-width: 90%;;
+                   
+                }
+            }
+        }
+    }
+
 }

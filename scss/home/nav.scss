@@ -22,7 +22,7 @@ navh{
     }
 
     .links{
-        max-width:80%;
+        max-width:90%;
 
         a{
             font-size: 15px;
@@ -34,20 +34,18 @@ navh{
 
     }
 }
-@media screen and (max-width:1250px) and (min-width:890px) {
-    nav{
-        .links{
-            margin-left:20%;
+
+
+@media screen and (max-width:$content-width){
+    navh{
+        max-width: 90%;
+        span{
+            margin: 0 10px;
         }
-    }
-
-}
-
-@media screen and (max-width:889px){
-    nav{
         .links{
-            font-size:10px;
-            margin-left:17%;
+            font-size:8px;
+            
+            
         }
     }
 
